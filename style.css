@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Varela&display=swap');
+body{
+    /* background-color: rgb(82, 146, 149); */
+
+    background-image: linear-gradient(180deg,   rgb(82, 146, 149),rgb(0, 0, 0));
+
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+nav{
+    background-color: black;
+    color: white;
+    font-family: 'Ubuntu';
+}
+nav img{
+    width: 40px;
+}
+
+nav ul{
+ display: flex;
+list-style-type: none;
+align-items: center;
+height: auto;
+}
+.band{
+display: flex;
+align-items: center;
+font-weight: bolder;
+font-size: 20px;
+}
+nav ul li{
+    margin: 10px;
+
+}
+.container{
+    min-height:75vh;
+    background-color: black;
+    color: white;
+    font-family:'Varela', sans-serif;
+    width: 70%;
+    margin: 23px auto;
+    display: flex;
+    padding: 34px;
+    border-radius: 10px;
+    background-image: url('img/bgrr.jpg');
+
+}
+.bottom{
+    position: sticky;
+    height: 130px;
+    bottom: 0;
+    background-color: black;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    flex-direction: column;
+}
+.buttons{
+    margin: 15px 0;
+    cursor: pointer;
+}
+#progressbar{
+    width:80%;
+}
+.songitem{
+    color: white;
+    background-color:rgb(36, 36, 36);
+    transition:background-color 0.3s;
+    height: 50px;
+
+    display: flex;
+    margin: 20px 0;
+    border-color: rgb(57, 56, 56);
+    align-items: center;
+    justify-content: space-between;
+    /* border-radius: 34px; */
+}
+.songitem:hover{
+    background-color: rgb(68, 66, 66);
+}
+.songitem .ilg{
+    width: 45px;
+    margin: 0 43px;
+}
+.songitem .timestamp{
+margin: 0 8px;
+}
+.songitem .tsb{
+    margin: 0 30px; 
+}
+.songinfo .playgiffy{
+width: 42px;
+opacity: 0;
+transition: opacity 1s ease-in;
+}
+.songinfo{
+    position: absolute;
+left: 10vw;
+ font-family:'Varela', sans-serif;
+}
+.songname{
+    font-weight: bolder;
+}
+@media (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
